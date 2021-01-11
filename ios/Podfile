@@ -1,0 +1,99 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+target 'RoadRunner' do
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    # use_frameworks!
+    
+    # Pods for app
+    rn_path = '../node_modules/react-native'
+    pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket'
+    ]
+    pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/Yoga.podspec"
+    pod 'GoogleMaps', '~> 3.7.0'
+    
+    pod 'Stripe', '~> 17.0.1'
+    pod 'GoogleSignIn', '~> 4.4.0'
+    
+    pod 'FBSDKCoreKit', '~> 5.6.0'
+    pod 'FBSDKLoginKit', '~> 5.6.0'
+    pod 'FBSDKShareKit', '~> 5.6.0'
+    
+    pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+    pod 'RNFBAnalytics', :path => '../node_modules/@react-native-firebase/analytics'
+    pod 'RNFBCrashlytics', :path => '../node_modules/@react-native-firebase/crashlytics'
+    pod 'GoogleIDFASupport', '~> 3.14.0'
+    
+    pod 'Folly', :podspec => "../node_modules/react-native/third-party-podspecs/Folly.podspec"
+end
+
+target 'RoadRunner-Restaurant' do
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    # use_frameworks!
+    
+    # Pods for app
+    rn_path = '../node_modules/react-native'
+    pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket'
+    ]
+    pod 'yoga', path: "#{rn_path}/ReactCommon/yoga/Yoga.podspec"
+    pod 'GoogleMaps'
+    
+    pod 'Stripe', '~> 17.0.1'
+    pod 'GoogleSignIn', '~> 4.4.0'
+    
+    pod 'FBSDKCoreKit', '~> 5.6.0'
+    pod 'FBSDKLoginKit', '~> 5.6.0'
+    pod 'FBSDKShareKit', '~> 5.6.0'
+    
+    pod 'RNFBApp', :path => '../node_modules/@react-native-firebase/app'
+    pod 'RNFBAnalytics', :path => '../node_modules/@react-native-firebase/analytics'
+    pod 'RNFBCrashlytics', :path => '../node_modules/@react-native-firebase/crashlytics'
+    pod 'GoogleIDFASupport', '~> 3.14.0'
+    
+    pod 'Folly', :podspec => "../node_modules/react-native/third-party-podspecs/Folly.podspec"
+end
+
+# Add new created flavors here
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == 'react-native-google-maps'
+            target.build_configurations.each do |config|
+                config.build_settings['CLANG_ENABLE_MODULES'] = 'No'
+            end
+        end
+
+        if target.name == "React"
+            target.remove_from_project
+        end
+        if target.name == 'yoga'
+            target.remove_from_project
+            target.build_configurations.each do |config|
+                config.build_settings['GCC_TREAT_WARNINGS_AS_ERRORS'] = 'NO'
+                config.build_settings['GCC_WARN_64_TO_32_BIT_CONVERSION'] = 'NO'
+            end
+        end
+    end
+end
+

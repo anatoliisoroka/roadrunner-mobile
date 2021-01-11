@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "582507719950",
+    "firebase_url": "https://roadrunner-1569512479459.firebaseio.com",
+    "project_id": "roadrunner-1569512479459",
+    "storage_bucket": "roadrunner-1569512479459.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582507719950:android:934d7f6be0e1f73d48fb5f",
+        "android_client_info": {
+          "package_name": "ie.mosaic.RoadRunner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582507719950-pvsi7ckki7jgiii1rllj9lgupaqts0as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbRKUxlB_CGpFTQovDWcg8XMkJDWU-b3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582507719950-lquq17d1ibaiqor3mdees16fr1kq522i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582507719950-jq74imtssedbl9qp9rtqj24d7k93ln9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ie.mosaic.roadrunner.restaurant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582507719950:android:4816090459a5f74048fb5f",
+        "android_client_info": {
+          "package_name": "ie.mosaic.RoadRunner.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582507719950-1dvdsu59n3vdallqp97n8fhjgop2ufa1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.mosaic.RoadRunner.customer",
+            "certificate_hash": "20ba0d8179b4033350bbb800bcbe8009468e07eb"
+          }
+        },
+        {
+          "client_id": "582507719950-okoqn782gc7cnkug44o4n5rtbjkerl4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.mosaic.RoadRunner.customer",
+            "certificate_hash": "b8c825f70205a0470e64d182320e1c3f57245a1c"
+          }
+        },
+        {
+          "client_id": "582507719950-pvsi7ckki7jgiii1rllj9lgupaqts0as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbRKUxlB_CGpFTQovDWcg8XMkJDWU-b3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582507719950-lquq17d1ibaiqor3mdees16fr1kq522i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582507719950-jq74imtssedbl9qp9rtqj24d7k93ln9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ie.mosaic.roadrunner.restaurant"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:582507719950:android:1b497f613b9351b848fb5f",
+        "android_client_info": {
+          "package_name": "ie.mosaic.RoadRunner.restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "582507719950-pvsi7ckki7jgiii1rllj9lgupaqts0as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbRKUxlB_CGpFTQovDWcg8XMkJDWU-b3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "582507719950-lquq17d1ibaiqor3mdees16fr1kq522i.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "582507719950-jq74imtssedbl9qp9rtqj24d7k93ln9l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ie.mosaic.roadrunner.restaurant"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

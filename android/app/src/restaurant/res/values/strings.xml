@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RoadRunner Restaurant</string>
+    <string name="facebook_app_id">2616331105094376</string>
+    <string name="fb_login_protocol_scheme">fb2616331105094376</string>
+</resources>
